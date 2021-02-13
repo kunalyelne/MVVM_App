@@ -6,8 +6,9 @@ import androidx.lifecycle.ViewModel
 class MainViewModel : ViewModel() {
 
     val textValue: MutableLiveData<String> = MutableLiveData("")
-
+    val textDescription: MutableLiveData<String> = MutableLiveData("");
     fun setStringValue(){
         textValue.value = "Heyo!"
+        textDescription.value = "Just trying out MVVM :)"
     }
 }
